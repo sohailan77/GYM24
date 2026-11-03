@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables  */
+:root {
+  --bg-color: #000000;
+  --color-card: #222222;
+  --color-primary: #FAFF00;
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #000000;
+  --color-btn-bg: #FAFF00;
+  --color-btn-text: #111111;
+  --font-family: "Familjen Grotesk", sans-serif;
+  --font-secondary: "Inter", sans-serif;
+  --hero-gradient: linear-gradient(
+        to right,
+        #000 0%,
+        transparent 30%,
+        transparent 70%,
+        #000 100%
+    );
+
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  /* background: ; */
+  background-attachment: fixed;
+}
