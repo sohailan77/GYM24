@@ -15,13 +15,15 @@
   --color-btn-text: #111111;
   --font-family: "Familjen Grotesk", sans-serif;
   --font-secondary: "Inter", sans-serif;
-  --hero-gradient: linear-gradient(
-    to right,
-    #000 0%,
-    transparent 30%,
-    transparent 70%,
-    #000 100%
-  );
+  --hero-gradient:
+    linear-gradient(to bottom, transparent 65%, #000 100%),
+    linear-gradient(
+      to right,
+      #000 0%,
+      transparent 30%,
+      transparent 70%,
+      #000 100%
+    );
 }
 
 html {
@@ -29,7 +31,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  background: rgb(69, 63, 63);
+  background: var(--bg-color);
   background-attachment: fixed;
   font-family: var(--font-family);
 }
@@ -37,15 +39,21 @@ body {
 /* header  */
 
 header {
+ position: absolute;
+  top: 0;
+  left: 5rem;
+  right: 5rem;
+  z-index: 99;
 }
 
 /* Navbar  */
 .navbar-container {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 10vw;
+  padding: 1.5rem 0rem;
+  width: 100%;
 }
 
 /* hamburger-menu */
@@ -58,7 +66,7 @@ header {
   display: flex;
   align-items: center;
 }
-.logo-container a{
+.logo-container a {
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -66,12 +74,14 @@ header {
 
 .navbar-container .logo-container a img {
   width: 8rem;
+  display: block;
 }
 
 /* Navigation links  */
 .nav-links {
   display: flex;
   align-items: center;
+  padding-right: 5rem;
 }
 .nav-links ul {
   display: flex;
@@ -84,10 +94,67 @@ header {
 
 .nav-links ul li a {
   text-decoration: none;
-  padding: 0.8rem 2.2rem;
+  padding: 0.8rem 3rem;
   font-size: 0.8rem;
-  /* font-weight: 00; */
   color: var(--primary-text-color);
   font-family: Inter, sans-serif;
+}
 
+/* main */
+/* Hero section  */
+
+.hero-section {
+  margin-inline: 5rem;
+}
+
+.hero-main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero content  */
+
+.hero-content {
+  width: 40%;
+}
+
+.hero-content h1 {
+  color: var(--primary-text-color);
+  font-size: 4rem;
+}
+
+.hero-content button {
+  background-color: var(--color-btn-bg);
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 50px;
+  margin-top: 1.5rem;
+}
+.hero-content button a {
+  text-decoration: none;
+  color: var(--secondary-text-color);
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+/* Hero image  */
+
+.hero-image {
+  width: 60%;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--hero-gradient);
+  /* pointer-events: none; */
+}
+
+.hero-image img {
+  width: 100%;
+  display: block;
 }
