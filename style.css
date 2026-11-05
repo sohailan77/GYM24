@@ -13,7 +13,7 @@
   --secondary-text-color: #000000;
   --color-btn-bg: #faff00;
   --color-btn-text: #111111;
-  --font-family: "Familjen Grotesk", sans-serif;
+  --font-family: "Manrope", sans-serif;
   --font-secondary: "Inter", sans-serif;
   --hero-gradient:
     linear-gradient(to bottom, transparent 65%, #000 100%),
@@ -36,19 +36,24 @@ body {
   font-family: var(--font-family);
 }
 
+/* Utility classes  */
+
+.mg-inline {
+  margin-inline: 10rem;
+}
+
 /* header  */
 
 header {
- position: absolute;
+  position: absolute;
   top: 0;
-  left: 5rem;
-  right: 5rem;
+  left: 10rem;
+  right: 10rem;
   z-index: 99;
 }
 
 /* Navbar  */
 .navbar-container {
-  /* width: 100%; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,30 +102,35 @@ header {
   padding: 0.8rem 3rem;
   font-size: 0.8rem;
   color: var(--primary-text-color);
-  font-family: Inter, sans-serif;
+  font-weight: 500;
 }
 
 /* main */
-/* Hero section  */
+
+/* Hero section */
 
 .hero-section {
-  margin-inline: 5rem;
+  margin-bottom: 10rem;
 }
 
 .hero-main-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  min-height: 45rem;
 }
 
 /* Hero content  */
 
 .hero-content {
-  width: 40%;
+  width: 60%;
+  z-index: 2;
 }
 
 .hero-content h1 {
   color: var(--primary-text-color);
+  font-weight: 800;
   font-size: 4rem;
 }
 
@@ -137,13 +147,13 @@ header {
   font-size: 0.7rem;
   font-weight: 800;
 }
-/* Hero image  */
 
+/* Hero image  */
 .hero-image {
-  width: 60%;
-  display: flex;
-  justify-content: end;
-  position: relative;
+  width: 70%;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .hero-image::before {
@@ -158,3 +168,5 @@ header {
   width: 100%;
   display: block;
 }
+
+/* Reason section  */
