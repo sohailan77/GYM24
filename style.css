@@ -42,6 +42,14 @@ body {
   margin-inline: 10rem;
 }
 
+.mg-bottom {
+  margin-bottom: 10rem;
+}
+
+.title-mg-bottom {
+  margin-bottom: 5rem;
+}
+
 /* header  */
 
 header {
@@ -109,10 +117,6 @@ header {
 
 /* Hero section */
 
-.hero-section {
-  margin-bottom: 10rem;
-}
-
 .hero-main-container {
   display: flex;
   justify-content: space-between;
@@ -136,16 +140,16 @@ header {
 
 .hero-content button {
   background-color: var(--color-btn-bg);
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2.5rem;
   border: none;
-  border-radius: 50px;
+  border-radius: 2rem;
   margin-top: 1.5rem;
 }
 .hero-content button a {
   text-decoration: none;
   color: var(--secondary-text-color);
-  font-size: 0.7rem;
-  font-weight: 800;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 /* Hero image  */
@@ -170,3 +174,44 @@ header {
 }
 
 /* Reason section  */
+
+/* Title */
+
+.reasons-container-title h2 {
+  color: var(--primary-text-color);
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+/* Reasons  */
+.reason-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: 100px 100px; */
+  row-gap: 3rem;
+  column-gap: 6rem;
+  align-content: center;
+}
+
+/* Reasons card  */
+.reason-card {
+  display: flex;
+}
+
+.reason-img {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+.reason-card h3 {
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.reason-card p {
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  font-weight: 500;
+}
