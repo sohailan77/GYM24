@@ -154,8 +154,9 @@ header {
 
 /* Hero image  */
 .hero-image {
-  width: 70%;
+  width: 65%;
   position: absolute;
+  /* right: -80px; */
   right: 0;
   top: 0;
 }
@@ -217,6 +218,7 @@ header {
 
 /* GYM membership plans section  */
 
+
 /* Title */
 .memberships-container-title h2 {
   color: var(--primary-text-color);
@@ -227,9 +229,10 @@ header {
 
 /* Gym Membership plans */
 .membership-plans-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 6rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
   margin-inline: 4.75rem;
 }
 
@@ -241,11 +244,12 @@ header {
   flex-direction: column;
   align-items: center;
   border-radius: 0.8rem;
+  width: 18rem;
 }
 
 .membership-plan-title {
   width: 100%;
-  padding-bottom:0.5rem;
+  padding-bottom: 0.5rem;
   border-bottom: 2px solid #000000;
   display: flex;
   flex-direction: column;
@@ -280,7 +284,7 @@ header {
   margin-bottom: 1rem;
 }
 
-.plan-details ul li i{
+.plan-details ul li i {
   margin-right: 0.8rem;
   font-size: 1.1rem;
 }
@@ -294,4 +298,41 @@ header {
   font-size: 1rem;
   font-weight: 500;
   margin: 1rem 0;
+}
+
+/* About Us Section  */
+
+/* About us container  */
+.about-us-main-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 6rem;
+}
+
+/* title  */
+.about-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.about-title h2 {
+  color: var(--primary-text-color);
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+.about-desc {
+  font-size: 1rem;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-top: 3rem;
+}
+
+/* Gym Images   */
+.about-gallery-right{
+  padding: 0.93em 0;
+  width: 100%;
 }
