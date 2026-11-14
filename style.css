@@ -128,8 +128,8 @@ header {
 /* Hero content  */
 
 .hero-content {
-  width: 60%;
-  z-index: 2;
+  width: auto;
+  z-index: 1;
 }
 
 .hero-content h1 {
@@ -154,10 +154,9 @@ header {
 
 /* Hero image  */
 .hero-image {
-  width: 65%;
+  width: auto;
   position: absolute;
-  /* right: -80px; */
-  right: 0;
+  right: -100px;
   top: 0;
 }
 
