@@ -400,12 +400,13 @@ header {
   padding-bottom: 5rem;
 }
 
-
 .footer-brand-part,
 .footer-address-part,
 .footer-contact-part {
-  width: 20rem;
-  height: auto;
+  width: auto
+}
+.footer-logo {
+  margin-bottom: 1.5rem;
 }
 
 .footer-logo img {
@@ -413,29 +414,62 @@ header {
   display: block;
 }
 
-.brand-decs {
-  margin-top: 1.5rem;
+.brand-decs p{
   color: var(--primary-text-color);
   font-size: 1rem;
-}
-
-
-.footer-contact-part {
 }
 
 .footer-heading {
   color: var(--primary-text-color);
   font-size: 1.2rem;
   font-weight: 800;
+  margin-bottom: 1.5rem;
 }
 
 .gym-address {
-  margin-top: 1.5rem;
   color: var(--primary-text-color);
   font-size: 1rem;
 }
 
-/* footer-contact  */
+.gym-contact,
+.email-icon,
+.gym-social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
 
-.footer-contact-part {
+.tel-icon,
+.email-icon,
+.gym-social-links {
+  display: flex;
+  align-items: center;
+}
+
+.tel-icon i,
+.email-icon i,
+.gym-social-links i {
+  font-size: 1.1rem;
+  color: var(--primary-text-color);
+}
+
+.tel-number,
+.email {
+  color: var(--primary-text-color);
+  font-size: 1rem;
+}
+
+.gym-contact {
+  margin-bottom: 0.3rem;
+}
+
+.gym-social-links {
+  margin-top: 1rem;
+}
+.gym-social-links a{
+/* display: inline-block; */
+  border: 1px solid var(--primary-text-color);
+  padding: 0.6rem;
+  border-radius: 50%;
+  margin-right: 0.6rem;
 }
