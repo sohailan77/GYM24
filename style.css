@@ -403,7 +403,7 @@ header {
 .footer-brand-part,
 .footer-address-part,
 .footer-contact-part {
-  width: auto
+  width: auto;
 }
 .footer-logo {
   margin-bottom: 1.5rem;
@@ -414,7 +414,7 @@ header {
   display: block;
 }
 
-.brand-decs p{
+.brand-decs p {
   color: var(--primary-text-color);
   font-size: 1rem;
 }
@@ -466,10 +466,43 @@ header {
 .gym-social-links {
   margin-top: 1rem;
 }
-.gym-social-links a{
-/* display: inline-block; */
+.gym-social-links a {
+  /* display: inline-block; */
   border: 1px solid var(--primary-text-color);
   padding: 0.6rem;
   border-radius: 50%;
   margin-right: 0.6rem;
+}
+
+/* back to top button  */
+
+.back-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  animation: show-back-top linear both;
+  animation-timeline: scroll(root);
+  animation-range: 10rem 50rem;
+}
+
+@keyframes show-back-top {
+  from {
+    transform: translateX(5rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.back-top a {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-text-color);
+  color: var(--secondary-text-color);
+  text-decoration: none;
 }
