@@ -112,6 +112,15 @@ header {
   font-size: 0.8rem;
   color: var(--primary-text-color);
   font-weight: 500;
+  transition: all 0.4s;
+}
+
+/* Nav li hover effects  */
+.nav-links ul li a:hover {
+  text-shadow:
+    0 2px 4px #000000,
+    0 0 12px #faff00,
+    0 0 28px #faff00;
 }
 
 /* main */
@@ -145,12 +154,29 @@ header {
   border: none;
   border-radius: 2rem;
   margin-top: 1.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
 }
 .hero-content button a {
   text-decoration: none;
   color: var(--secondary-text-color);
   font-size: 1.1rem;
   font-weight: 700;
+}
+
+/* Hero button hover  */
+
+.hero-content button:hover {
+  box-shadow: 0 0 20px #faff0050;
+  transform: scale(1.1);
+}
+
+.hero-content button:active {
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
 }
 
 /* Hero image  */
@@ -238,21 +264,25 @@ header {
 /* Membership cards  */
 .membership-plan {
   background-color: var(--color-card);
-  padding: 1.5rem 0;
+  padding-bottom: 1.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 0.8rem;
   width: 18rem;
+  border: 4px solid transparent;
+  transition: all 0.2s ease;
 }
 
 .membership-plan-title {
   width: 100%;
   padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
   border-bottom: 2px solid #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.2s ease;
 }
 
 .membership-plan-title h3 {
@@ -260,12 +290,14 @@ header {
   color: var(--primary-text-color);
   font-weight: 800;
   margin-bottom: 0.5rem;
+  transition: all 0.2s ease;
 }
 
 .membership-plan-title span {
   font-size: 1.5rem;
   color: var(--primary-text-color);
   font-weight: 800;
+  transition: all 0.2s ease;
 }
 
 .plan-details {
@@ -286,6 +318,7 @@ header {
 .plan-details ul li i {
   margin-right: 0.8rem;
   font-size: 1.1rem;
+  transition: all 0.2s ease;
 }
 
 .plan-buy-btn button {
@@ -297,6 +330,38 @@ header {
   font-size: 1rem;
   font-weight: 500;
   margin: 1rem 0;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+/* Membership card hover  */
+.membership-plan:hover {
+  border: 4px solid var(--color-primary);
+  .membership-plan-title {
+    background-color: var(--color-primary);
+  }
+  .membership-plan-title h3,
+  span {
+    color: var(--secondary-text-color);
+  }
+  .plan-details ul li i {
+    color: var(--color-primary);
+  }
+}
+
+/* Membership cards button hover  */
+
+.plan-buy-btn button:hover {
+  box-shadow: 0 0 20px #faff0050;
+  transform: scale(1.1);
+}
+
+.plan-buy-btn button:active {
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
 }
 
 /* About Us Section  */
@@ -360,10 +425,13 @@ header {
   background-color: var(--color-card);
   padding: 1.4rem 1rem;
   border-radius: 1.2rem;
+  border: 4px solid transparent;
+  transition: all 0.2s ease;
 }
 
 .trainer-img img {
   width: 100%;
+  display: block;
 }
 
 .trainer-name p {
@@ -383,11 +451,26 @@ header {
   padding: 0.6rem;
   border-radius: 50%;
   margin: 0.3rem;
+  transition: all 0.2s ease;
 }
 
 .trainer-socials a i {
   font-size: 1.1rem;
   color: var(--primary-text-color);
+  transition: all 0.2s ease;
+}
+
+/* Trainers card hover  */
+.trainer-card:hover {
+  border: 4px solid var(--color-primary);
+
+  .trainer-socials a {
+    border: 1px solid var(--color-primary);
+  }
+
+  .trainer-socials a i {
+    color: var(--color-primary);
+  }
 }
 
 /* footer  */
@@ -447,8 +530,7 @@ header {
 }
 
 .tel-icon i,
-.email-icon i,
-.gym-social-links i {
+.email-icon i {
   font-size: 1.1rem;
   color: var(--primary-text-color);
 }
@@ -467,11 +549,27 @@ header {
   margin-top: 1rem;
 }
 .gym-social-links a {
-  /* display: inline-block; */
   border: 1px solid var(--primary-text-color);
   padding: 0.6rem;
   border-radius: 50%;
   margin-right: 0.6rem;
+  transition: all 0.1s ease;
+}
+
+.gym-social-links i {
+  font-size: 1.1rem;
+  color: var(--primary-text-color);
+  transition: all 0.1s ease;
+}
+
+/* GYM social links hover effects  */
+
+.gym-social-links a:hover {
+  border: 1px solid var(--color-primary);
+
+  i {
+    color: var(--color-primary);
+  }
 }
 
 /* back to top button  */
@@ -505,4 +603,10 @@ header {
   background-color: var(--primary-text-color);
   color: var(--secondary-text-color);
   text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* Back top hover effects  */
+.back-top a:hover {
+  background-color: var(--color-btn-bg);
 }
