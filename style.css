@@ -124,7 +124,10 @@ header {
 }
 
 /* main */
-
+main {
+  width: min(1820px, 100%);
+  margin: auto;
+}
 /* Hero section */
 
 .hero-main-container {
@@ -255,10 +258,9 @@ header {
 /* Gym Membership plans */
 .membership-plans-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
-  margin-inline: 4.75rem;
+  gap: 7rem;
 }
 
 /* Membership cards  */
@@ -413,11 +415,10 @@ header {
 
 /* Trainers container  */
 .trainers-cards-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 1.5rem;
-  /* display: flex; */
-  /* gap: 40px; */
 }
 
 /* trainer cards  */
