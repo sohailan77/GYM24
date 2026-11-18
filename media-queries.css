@@ -1,0 +1,145 @@
+@media screen and (min-width: 1550px) {
+  .mg-inline {
+    margin-inline: 10rem;
+  }
+  .hero-section {
+    margin-inline: 10rem;
+  }
+
+  .membership-plan-title {
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 2.5rem;
+  }
+  .membership-plan {
+    width: 20rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .plan-details ul li {
+    margin-bottom: 1.5rem;
+  }
+
+  .trainer-card {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .hero-main-container {
+    overflow-x: clip;
+  }
+
+  .mg-inline {
+    margin-inline: 8rem;
+  }
+  .hero-content {
+    margin-left: 8rem;
+  }
+
+  header {
+    padding-inline: 8rem;
+  }
+
+  .hero-image {
+    width: auto;
+    position: absolute;
+    right: -150px;
+    top: 0;
+  }
+
+  .membership-plan {
+    width: 18rem;
+  }
+
+  .membership-plans-container {
+    gap: 3rem;
+  }
+  .trainer-card {
+    width: 17rem;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .hero-content {
+    margin-left: 5rem;
+  }
+
+  .mg-inline {
+    margin-inline: 5rem;
+  }
+
+  header {
+    padding-inline: 5rem;
+  }
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+  .hero-image {
+    width: auto;
+    right: -190px;
+    top: 0;
+  }
+
+  .membership-plan {
+    width: 15.5rem;
+  }
+
+  .membership-plans-container {
+    gap: 2.5rem;
+  }
+
+  .back-top {
+    bottom: 1.2rem;
+    right: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .reasons-container-title h2 {
+    text-align: center;
+  }
+
+  .hero-image {
+    width: auto;
+    right: -215px;
+    top: 0;
+  }
+  .hero-content {
+    margin-left: 2rem;
+  }
+
+  .mg-inline {
+    margin-inline: 2rem;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .reason-card-container {
+    row-gap: 8rem;
+    column-gap: 4rem;
+  }
+  .membership-plan {
+    width: 14rem;
+  }
+
+  .membership-plans-container {
+    gap: 2rem;
+  }
+  .plan-details {
+    padding-inline: 0.6rem;
+  }
+
+  .plan-details ul li {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  .plan-details ul li i {
+    margin-right: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+}

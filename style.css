@@ -195,7 +195,6 @@ main {
   position: absolute;
   inset: 0;
   background: var(--hero-gradient);
-  /* pointer-events: none; */
 }
 
 .hero-image img {
@@ -424,6 +423,7 @@ main {
 /* trainer cards  */
 .trainer-card {
   background-color: var(--color-card);
+  width: 15rem;
   padding: 1.4rem 1rem;
   border-radius: 1.2rem;
   border: 4px solid transparent;
