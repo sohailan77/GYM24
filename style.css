@@ -370,7 +370,7 @@ main {
 /* About us container  */
 .about-us-main-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 6rem;
 }
@@ -380,6 +380,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  width: 50%;
 }
 
 .about-title h2 {
@@ -398,7 +399,11 @@ main {
 
 /* Gym Images   */
 .about-gallery-right {
-  padding: 0.93em 0;
+  padding: 1.5rem 0;
+  width: 50%;
+}
+
+.about-gallery-right img {
   width: 100%;
 }
 
@@ -476,12 +481,17 @@ main {
 
 /* footer  */
 
+footer {
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
 /* footer main container  */
+
 .footer-main-container {
   display: flex;
   justify-content: space-between;
-  padding-top: 10rem;
-  padding-bottom: 5rem;
+  padding-top: 10em;
+  padding-bottom: rem;
 }
 
 .footer-brand-part,
@@ -490,29 +500,29 @@ main {
   width: auto;
 }
 .footer-logo {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
 }
 
 .footer-logo img {
-  width: 8rem;
+  width: 8em;
   display: block;
 }
 
 .brand-decs p {
   color: var(--primary-text-color);
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .footer-heading {
   color: var(--primary-text-color);
-  font-size: 1.2rem;
+  font-size: 1.2em;
   font-weight: 800;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
 }
 
 .gym-address {
   color: var(--primary-text-color);
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .gym-contact,
@@ -520,7 +530,7 @@ main {
 .gym-social-links {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.8em;
 }
 
 .tel-icon,
@@ -532,33 +542,33 @@ main {
 
 .tel-icon i,
 .email-icon i {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   color: var(--primary-text-color);
 }
 
 .tel-number,
 .email {
   color: var(--primary-text-color);
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .gym-contact {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.3em;
 }
 
 .gym-social-links {
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 .gym-social-links a {
   border: 1px solid var(--primary-text-color);
-  padding: 0.6rem;
+  padding: 0.6em;
   border-radius: 50%;
-  margin-right: 0.6rem;
+  margin-right: 0.6em;
   transition: all 0.1s ease;
 }
 
 .gym-social-links i {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   color: var(--primary-text-color);
   transition: all 0.1s ease;
 }
@@ -577,16 +587,16 @@ main {
 
 .back-top {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 2em;
+  right: 2em;
   animation: show-back-top linear both;
   animation-timeline: scroll(root);
-  animation-range: 10rem 50rem;
+  animation-range: 10em 50em;
 }
 
 @keyframes show-back-top {
   from {
-    transform: translateX(5rem);
+    transform: translateX(5em);
   }
 
   to {
@@ -595,8 +605,8 @@ main {
 }
 
 .back-top a {
-  width: 3rem;
-  height: 3rem;
+  width: 3em;
+  height: 3em;
   border-radius: 5px;
   display: flex;
   justify-content: center;

@@ -49,7 +49,7 @@
   }
 
   .membership-plan {
-    width: 18rem;
+    width: 19rem;
   }
 
   .membership-plans-container {
@@ -57,6 +57,12 @@
   }
   .trainer-card {
     width: 17rem;
+  }
+  .about-us-main-container {
+    gap: 4rem;
+  }
+  .about-desc {
+    margin-top: 2rem;
   }
 }
 
@@ -82,11 +88,35 @@
   }
 
   .membership-plan {
-    width: 15.5rem;
+    width: 16rem;
   }
 
   .membership-plans-container {
-    gap: 2.5rem;
+    gap: 2rem;
+  }
+
+  .plan-details {
+    padding-inline: 1rem;
+  }
+
+  .plan-details ul li {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  .plan-details ul li i {
+    margin-right: 0.8rem;
+    font-size: 1rem;
+  }
+  .trainer-card {
+    width: 16rem;
+  }
+  .about-us-main-container {
+    gap: 4rem;
+  }
+  .about-desc {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    line-height: 1.2rem;
   }
 
   .back-top {
@@ -96,24 +126,35 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .reasons-container-title h2 {
-    text-align: center;
+  header {
+    padding-inline: 2rem;
+  }
+  .mg-inline {
+    margin-inline: 2rem;
   }
 
-  .hero-image {
-    width: auto;
-    right: -215px;
-    top: 0;
+  .nav-links ul li a {
+    padding: 0.8rem 2rem;
+  }
+  .hero-main-container {
+    margin-bottom: 5rem;
   }
   .hero-content {
     margin-left: 2rem;
   }
 
-  .mg-inline {
-    margin-inline: 2rem;
+  .hero-image {
+    width: auto;
+    right: -320px;
+    top: 0;
   }
-  .hero-content h1 {
-    font-size: 3rem;
+
+  .hero-image img {
+    width: 90%;
+    display: block;
+  }
+  .reasons-container-title h2 {
+    text-align: center;
   }
 
   .reason-card-container {
@@ -139,7 +180,129 @@
     margin-right: 0.8rem;
     font-size: 0.9rem;
   }
+
+  .trainer-card {
+    width: 14rem;
+  }
+  .about-us-main-container {
+    align-items: flex-end;
+  }
+  .about-desc {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 95%;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  header {
+    padding-inline: 1em;
+  }
+  .mg-inline {
+    margin-inline: 1rem;
+  }
+
+  .nav-links ul li a {
+    padding: 0.8rem 2rem;
+  }
+  .nav-links ul li:last-child a {
+    padding-right: 0;
+  }
+
+  .hero-content {
+    margin-left: 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+  .hero-image {
+    width: auto;
+    right: -375px;
+    top: -25px;
+  }
+
+  .hero-image img {
+    width: 85%;
+    display: block;
+  }
+
+  .hero-image::before {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+      linear-gradient(to bottom, transparent 65%, #000 100%),
+      linear-gradient(
+        to right,
+        #000 0%,
+        transparent 30%,
+        transparent 70%,
+        #000 100%
+      );
+  }
+
+  .hero-main-container {
+    margin-bottom: 0rem;
+  }
+
+  .reason-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    justify-items: center;
+  }
+
+  .reason-card {
+    width: 80%;
+  }
+
+  .membership-plan {
+    width: 15rem;
+  }
+  .about-us-main-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-title h2 {
+    text-align: center;
+  }
+
+  .about-content-left {
+    width: 70%;
+  }
+  .about-gallery-right {
+    width: 80%;
+  }
+
+  .about-desc {
+    text-align: center;
+  }
+  .trainers-cards-container {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .trainers-cards-container::-webkit-scrollbar {
+    display: none;
+  }
+
+.trainer-card {
+  min-width: 15rem;
+}
+
+.footer-brand-part{
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.footer-main-container {
+  margin-inline: 3rem;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+}
+@media screen and (max-width: 650px) {
 }
