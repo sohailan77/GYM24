@@ -133,8 +133,8 @@
     margin-inline: 2rem;
   }
 
-  .nav-links ul li a {
-    padding: 0.8rem 2rem;
+  .nav-links ul {
+    gap: 4rem;
   }
   .hero-main-container {
     margin-bottom: 5rem;
@@ -206,8 +206,8 @@
     margin-inline: 1rem;
   }
 
-  .nav-links ul li a {
-    padding: 0.8rem 2rem;
+  .nav-links ul {
+    gap: 3rem;
   }
   .nav-links ul li:last-child a {
     padding-right: 0;
@@ -290,19 +290,57 @@
     display: none;
   }
 
-.trainer-card {
-  min-width: 15rem;
-}
+  .trainer-card {
+    min-width: 15rem;
+  }
 
-.footer-brand-part{
-  width: 100%;
-  margin-bottom: 3rem;
-}
-.footer-main-container {
-  margin-inline: 3rem;
-  flex-wrap: wrap;
-  gap: 5rem;
-}
+  .footer-brand-part {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .footer-main-container {
+    margin-inline: 3rem;
+    flex-wrap: wrap;
+    gap: 5rem;
+  }
 }
 @media screen and (max-width: 650px) {
+  html {
+    font-size: 70%;
+  }
+  .navbar-container {
+    position: relative;
+  }
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    transform: translateX(-100%);
+    background: var(--bg-color);
+    left: -1em;
+    width: calc(100% + 2em);
+    transition: transform 0.3s ease-out;
+  }
+
+  .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.85rem;
+    padding: 2rem 0;
+  }
+  .nav-links ul li a {
+    padding: 0;
+  }
+  .onclick {
+    transform: translateX(0%);
+  }
+
+  .hamburger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburger-menu img {
+    width: 1.5rem;
+  }
 }
